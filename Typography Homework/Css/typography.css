@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+.nav-link:hover {
+    color: #ff6600 !important;  /* Change to your desired hover color */
+    text-decoration: underline;  /* Optional: underline on hover */
+  }
+  
+
+h1{
+    font-size: 1.802cm;
+    font-weight: 700;
+  }
+
+  h2{
+    font-size: 1.602cm;
+    font-weight: 700;}
+
+.footer-dm{
+        text-align: center;
+      }

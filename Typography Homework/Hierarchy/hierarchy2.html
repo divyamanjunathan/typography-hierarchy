@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hierarchy 2 – Recursive Typeface Only</title>
+
+  <!-- Google Font: Recursive -->
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,MONO@-10,300..1000,1,0&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .preview-box pre {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+      .nav-link:hover {
+    color: #ffffff !important;  /* Change to your desired hover color */
+    text-decoration: underline;  /* Optional: underline on hover */
+  }
+    body {
+      font-family: 'arial', sans-serif;
+      background-color: #f4f4f4;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Recursive', sans-serif;
+      font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "SLNT" 0;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 89.76px;
+      font-variation-settings: "wght" 900, "CASL" 1, "SLNT" 0;
+    }
+
+    h2 {
+      font-size: 67.34px;
+      font-variation-settings: "wght" 700, "CASL" 0.8, "SLNT" -10;
+    }
+
+    h3 {
+      font-size: 50.52px;
+      font-variation-settings: "wght" 500, "CASL" 0.7, "SLNT" -10;
+    }
+
+    h4 {
+      font-size: 37.9px;
+      font-variation-settings: "wght" 400, "CASL" 0.6, "SLNT" -5;
+    }
+
+    h5,h6{
+      font-family: 'Recursive', sans-serif;
+      font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "SLNT" 0;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    h5{
+        font-size: 28.43px;
+        font-variation-settings: "wght" 400, "SLNT" -10;
+    }
+
+    h6{
+        font-size: 21.33px;
+        font-variation-settings: "wght" 600, "CASL" 0.4;
+        text-decoration: underline;
+        color: #007bff;
+    }
+
+    p {
+      font-family: 'Recursive', sans-serif;
+      font-size: 16px;
+      font-variation-settings: "wght" 300, "CASL" 0, "SLNT" 0;
+      text-align: justify;
+    }
+
+    em {
+      font-style: italic;
+      font-size: 18.5px;
+      font-variation-settings: "wght" 400, "SLNT" -10, "CASL" 0.5;
+      color: #555;
+    }
+
+    a {
+      font-size: 17.5px;
+      font-variation-settings: "wght" 600, "CASL" 0.4;
+      color: #007bff;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    
+    /* Align right content consistently with left text */
+.preview-box .col-md-5 {
+  padding-left: 1rem !important;
+  padding-right: 4rem !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.preview-box .col-md-7 {
+  padding-right: 7rem !important;
+}
+
+.type-scale-info p { 
+    text-align: center;
+    font-weight: 500;
+    font-size: 14;
+}
+
+.type-scale-info a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.type-scale-info a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.link-sample {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #007bff;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 0rem;
+}
+
+.link-sample:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      margin-top: 3rem;
+    }
+
+    .container p{
+        font-family: arial;
+    }
+
+    .navbar-nav {
+  justify-content: center !important;
+  gap: 3rem; /* Adjust spacing between items */
+}
+
+.navbar {
+  padding: 0.5rem 2rem; /* Reduces tall blue bar and adds side padding */
+}
+
+.preview-box {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+  </style>
+</head>
+    <body class="d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #cdbf84">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../Hierarchy/index2.html">Dmanjuna</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100 justify-content-around">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Hierarchy/hierarchy1.html">Alegreya Sans SC & IBM Plex Sans</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../Hierarchy/hierarchy2.html">Recursive</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Hierarchy/hierarchy3.html">Syne,Spectral & Manrope</a>
+                  </li>             
+                </ul>          
+              </div>
+            </div>
+          </nav>
+  <div class="container">
+    <div class="type-scale-info text-center py-2">
+        <h4> <strong>Recursive</strong></h4>  <p><strong>Scale:</strong> 1.333 (Perfect Fourth) </br> <strong>Base Size:</strong> 16px </br> <strong>Generated with</strong> <a href="https://type-scale.com" target="_blank">type-scale.com</a></p>
+      </div>
+    <div class="preview-box">
+        <div class="row align-items-start">
+            <!-- Left Column: Text Preview -->
+            <div class="col-md-7">   
+      <h1>Heading 1</h1>
+      <p>Aliquam vel libero vitae diam dapibus pretium sit amet sed orci. Vestibulum at aliquet leo. Donec quis quam nec elit vulputate facilisis at eu purus. Curabitur vitae posuere nunc. Sed eu libero semper, cursus risus id, placerat enim. Aliquam tempor molestie felis tempus pulvinar. Cras tellus massa, sollicitudin id euismod vel, cursus eget justo.</p>
+    </div>
+    <!-- Right Column: Typography Info -->
+    <div class="col-md-5 text-md-start px-5 py-4">
+        <pre style="font-size: 14px; color: #555;">
+  font-family: Recursive;
+  font-size: 89.76px;
+  font-weight: 900;
+  font-style: normal;
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-box">
+    <div class="row align-items-start">
+        <!-- Left Column: Text Preview -->
+        <div class="col-md-7">
+  <h2>Heading 2</h2>
+  <p>Aliquam vel libero vitae diam dapibus pretium sit amet sed orci. Vestibulum at aliquet leo. Donec quis quam nec elit vulputate facilisis at eu purus. Curabitur vitae posuere nunc. Sed eu libero semper, cursus risus id, placerat enim. Aliquam tempor molestie felis tempus pulvinar. Cras tellus massa, sollicitudin id euismod vel, cursus eget justo.</p>
+</div>
+<!-- Right Column: Typography Info -->
+<div class="col-md-5 text-md-start px-5 py-4">
+    <pre style="font-size: 14px; color: #555;">
+font-family: Recursive;
+font-size: 67.34px;
+font-weight: 700;
+font-style: normal;
+    </pre>
+  </div>
+</div>
+</div>
+
+<div class="preview-box">
+    <div class="row align-items-start">
+        <!-- Left Column: Text Preview -->
+        <div class="col-md-7">
+  <h3>Heading 3</h3>
+  <p>Aliquam vel libero vitae diam dapibus pretium sit amet sed orci. Vestibulum at aliquet leo. Donec quis quam nec elit vulputate facilisis at eu purus. Curabitur vitae posuere nunc. Sed eu libero semper, cursus risus id, placerat enim. Aliquam tempor molestie felis tempus pulvinar. Cras tellus massa, sollicitudin id euismod vel, cursus eget justo.</p>
+</div>
+<!-- Right Column: Typography Info -->
+<div class="col-md-5 text-md-start px-5 py-4">
+    <pre style="font-size: 14px; color: #555;">
+font-family: Recursive;
+font-size: 50.52px;
+font-weight: 500;
+font-style: normal;
+    </pre>
+  </div>
+</div>
+</div>
+
+<div class="preview-box">
+    <div class="row align-items-start">
+         <!-- Left Column: Text Preview -->
+         <div class="col-md-7">
+   <h4>Heading 4</h4>
+   <p>Aliquam vel libero vitae diam dapibus pretium sit amet sed orci. Vestibulum at aliquet leo. Donec quis quam nec elit vulputate facilisis at eu purus. Curabitur vitae posuere nunc. Sed eu libero semper, cursus risus id, placerat enim. Aliquam tempor molestie felis tempus pulvinar. Cras tellus massa, sollicitudin id euismod vel, cursus eget justo.</p>
+ </div>
+ <!-- Right Column: Typography Info -->
+ <div class="col-md-5 text-md-start px-5 py-3">
+     <pre style="font-size: 14px; color: #555;">
+font-family: Recursive;
+font-size: 37.9px;
+font-weight: 400;
+font-style: normal;
+     </pre>
+   </div>
+ </div>
+</div>
+
+<div class="preview-box">
+    <div class="row align-items-start">
+        <!-- Left Column: Text Preview -->
+        <div class="col-md-7">
+    <h5> Emphasis Text </h5>
+    <p>Aliquam vel libero vitae diam dapibus pretium sit amet sed orci. Vestibulum at aliquet leo. Donec quis quam nec elit vulputate facilisis at eu purus. Curabitur vitae posuere nunc. Sed eu libero semper, cursus risus id, placerat enim. Aliquam tempor molestie felis tempus pulvinar. Cras tellus massa, sollicitudin id euismod vel, cursus eget justo.</p>
+</div>
+<!-- Right Column: Typography Info -->
+<div class="col-md-5 text-md-start px-5 py-3">
+    <pre style="font-size: 14px; color: #555;">
+font-family: Recursive;
+font-size: 28.43px;
+font-weight: 400;
+font-style: normal;
+    </pre>
+  </div>
+</div>
+</div>
+
+<div class="preview-box">
+    <div class="row align-items-start">
+        <!-- Left Column: Text Preview -->
+        <div class="col-md-7">
+    <h6> Line Text </h6>
+    <a href="#" class="link-sample">Line Text (Link): Hover</a>
+    <p>Aliquam vel libero vitae diam dapibus pretium sit amet sed orci. Vestibulum at aliquet leo. Donec quis quam nec elit vulputate facilisis at eu purus. Curabitur vitae posuere nunc. Sed eu libero semper, cursus risus id, placerat enim. Aliquam tempor molestie felis tempus pulvinar. Cras tellus massa, sollicitudin id euismod vel, cursus eget justo.</p>
+</div>
+<!-- Right Column: Typography Info -->
+<div class="col-md-5 text-md-start px-5 py-1">
+    <pre style="font-size: 14px; color: #555;">
+font-family: Recursive; 
+font-size: 21.33px;  
+font-weight: 600; 
+font-style: normal;
+text-decoration: underline;
+color: #007bff;
+<strong>Hover </strong>
+color: #0056b3;
+text-decoration: none;
+    </pre>
+  </div>
+</div>
+</div>
+
+<div class="preview-box">
+    <div class="row align-items-start">
+        <!-- Left Column: Text Preview -->
+        <div class="col-md-7">
+    <p> Body Text </p>
+    <p>Aliquam vel libero vitae diam dapibus pretium sit amet sed orci. Vestibulum at aliquet leo. Donec quis quam nec elit vulputate facilisis at eu purus. Curabitur vitae posuere nunc. Sed eu libero semper, cursus risus id, placerat enim. Aliquam tempor molestie felis tempus pulvinar. Cras tellus massa, sollicitudin id euismod vel, cursus eget justo.</p>
+</div>
+<!-- Right Column: Typography Info -->
+<div class="col-md-5 text-md-start px-5 py-2">
+    <pre style="font-size: 14px; color: #555;">
+  font-family: Recursive;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+    </pre>
+  </div>
+</div>
+</div>
+
+    <footer>
+      &copy; 2025 | Recursive by Divya Manjunathan
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

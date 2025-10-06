@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dmanjuna - Typography Hierarchy</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/typography.css">
+
+    <style>
+      body {
+      font-family: 'arial', sans-serif;
+      background-color: #f4f4f4;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      margin-top: 3rem;
+    }
+
+    .container p{
+        font-family: arial;
+    }
+
+      .nav-link:hover {
+    color: #ffffff !important;  /* Change to your desired hover color */
+    text-decoration: underline;  /* Optional: underline on hover */
+  }
+
+  .navbar-nav {
+  justify-content: center !important;
+  gap: 3rem; /* Adjust spacing between items */
+}
+
+.navbar {
+  padding: 0.5rem 2rem; /* Reduces tall blue bar and adds side padding */
+}
+    </style>
+  </head>
+
+  <!-- Make body full height and flex column -->
+  <body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #cdbf84;">
+      <div class="container-fluid">
+        <a class="navbar-brand active" aria-current="page" href="index2.html">Dmanjuna</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100 justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link" href="../Typography Homework/Hierarchy/hierarchy1.html">Alegreya Sans SC + IBM Plex Sans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Typography Homework/Hierarchy/hierarchy2.html">Recursive</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Typography Homework/Hierarchy/hierarchy3.html">Syne + Spectral + Manrope</a>
+            </li>
+          </ul>          
+        </div>
+      </div>
+    </nav>
+
+    <!-- Give content flex-grow to push footer -->
+    <main class="container text-center flex-grow-1">
+      <div class="row align-items-start">
+        <div class="col py-5">
+          <h1 class="py-3">Typographical Hierarchies</h1>
+          <p class="py-1">Select one of the hierarchy examples from the top navigation.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer stays at bottom when content is short -->
+    <footer class="footer-dm py-3">
+      &copy; 2025 | Typographical Hierarchies by Divya Manjunathan
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
